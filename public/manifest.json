@@ -1,5 +1,5 @@
 {
-  "name": "Mi App PWA",
+  "name": "Distribución SP",
   "short_name": "MiPWA",
   "description": "Descripción de mi aplicación PWA",
   "theme_color": "#000000",
@@ -22,7 +22,7 @@
       "purpose": "maskable any"
     },
     {
-      "src": "/icons/icon-128x128.png",
+      "src": "/icons/gota-de-agua(128px).png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "maskable any"
@@ -52,7 +52,7 @@
       "purpose": "maskable any"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "src": "/icons/gota-de-agua(512px).png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"

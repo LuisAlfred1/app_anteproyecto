@@ -1,0 +1,67 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente principal de la gota -->
+    <radialGradient id="waterGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#4FC3F7;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976D2;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Gradiente para el brillo -->
+    <radialGradient id="shineGradient" cx="0.4" cy="0.3" r="0.6">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Sombra -->
+    <radialGradient id="shadowGradient" cx="0.5" cy="0.9" r="0.4">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Filtro para sombra exterior -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="8" dy="12" stdDeviation="8" flood-color="#1565C0" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Fondo circular -->
+  <circle cx="256" cy="256" r="240" fill="#E3F2FD" opacity="0.3"/>
+  
+  <!-- Sombra de la gota -->
+  <ellipse cx="256" cy="420" rx="80" ry="20" fill="url(#shadowGradient)"/>
+  
+  <!-- Gota principal -->
+  <path d="M 256 80 
+           C 320 120, 380 180, 380 260
+           C 380 330, 325 380, 256 380
+           C 187 380, 132 330, 132 260
+           C 132 180, 192 120, 256 80 Z" 
+        fill="url(#waterGradient)" 
+        filter="url(#dropShadow)"/>
+  
+  <!-- Brillo principal -->
+  <ellipse cx="220" cy="160" rx="40" ry="60" fill="url(#shineGradient)" opacity="0.9"/>
+  
+  <!-- Brillo secundario -->
+  <ellipse cx="290" cy="200" rx="15" ry="25" fill="#FFFFFF" opacity="0.6"/>
+  
+  <!-- Pequeña gota decorativa -->
+  <circle cx="320" cy="140" r="8" fill="#4FC3F7" opacity="0.8"/>
+  <circle cx="315" cy="135" r="3" fill="#FFFFFF" opacity="0.7"/>
+  
+  <!-- Ondas decorativas en la base -->
+  <path d="M 180 350 Q 220 340, 260 350 Q 300 360, 340 350" 
+        stroke="#81C784" 
+        stroke-width="3" 
+        fill="none" 
+        opacity="0.6"/>
+  
+  <path d="M 190 365 Q 220 355, 250 365 Q 280 375, 310 365" 
+        stroke="#66BB6A" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.5"/>
+</svg>
